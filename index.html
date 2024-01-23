@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
-<body>
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
 
+
+
+<body>
+    <div>
+        <h1 class="test">This is a Heading</h1>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+    </div>
+    <div>
+        <button onclick="rise()">Do Shit!</button>
+        <div id="app">
+            <h1>{{ message }}</h1>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+        <div id="trigger">
+            <p>{{ message }}</p>
+            <button v-on:click="bust">Nutella</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
