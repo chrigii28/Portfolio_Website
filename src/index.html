@@ -22,23 +22,23 @@
           <li><button id="BtnContact" v-on:click="reverseMessage">Contact</button></li>
           
         </ul>
-      </nav>
+    </nav>
     <div>
-        <button onclick="rise()">Do Shit!</button>
-        <div id="app">
-            <h1>{{ message }}</h1>
-            <button v-on:click="reverseMessage">Reverse Message</button>
-        </div>
-        <div id="trigger">
-            <p>{{ message }}</p>
-            <button v-on:click="bust">Nutella</button>
-        </div>
-        <div>
-            <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080" alt="Page Image" width="360">
-
-        </div>
+        <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080" alt="Page Image" width="360"/>
     </div>
-    <script src="app.js"></script>
-    <script src="scripts.js"></script>
+    <div id="app">{{ message }}</div>
+
+<script type="module">
+  import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+  createApp({
+    setup() {
+      const message = ref('Hello Vue!')
+      return {
+        message
+      }
+    }
+  }).mount('#app')
+</script>
 </body>
 </html>

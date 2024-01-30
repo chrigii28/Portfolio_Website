@@ -18,6 +18,8 @@ new Vue({
     },
     methods: {
         bust: function() {
+            const parentMessage = ref('Parent')
+            const items = ref([{ message: 'Foo' }, { message: 'Bar' }])
             this.message = "SIUU";
         }
     }
