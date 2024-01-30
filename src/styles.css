@@ -1,7 +1,51 @@
-#BtnContact{
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+/* styles.css */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust spacing to your preference */
+  gap: 2px; /* Space between images */
 }
+
+.row img {
+  flex: 1; /* Allow images to grow and fill the available space */
+  max-width: 100%; /* Ensure images don't overflow their container */
+  height: 100%; /* Maintain aspect ratio */
+  min-width: 100px; /* Minimum width of images to ensure they don't get too small */
+  transition: transform 0.5s ease; /* Smooth transition for scaling */
+  transform-origin: center; /* Scale from the center of the image */
+  transform: scale(0.8); /* Start images at a smaller scale */
+  object-fit: cover; /* Cover the area of the container without breaking the aspect ratio */
+
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 480px) {
+  .row img {
+    flex-basis: calc(100% / 2 - 10px); /* 2 images per row minus gap */
+  }
+}
+
+@media (min-width: 768px) {
+  .row img {
+    flex-basis: calc(100% / 3 - 10px); /* 3 images per row minus gap */
+  }
+}
+
+@media (min-width: 992px) {
+  .row img {
+    flex-basis: calc(100% / 4 - 10px); /* 4 images per row minus gap */
+  }
+}
+
+@media (min-width: 1200px) {
+  .row img {
+    flex-basis: calc(100% / 5 - 10px); /* 5 images per row minus gap */
+  }
+}
+
+
+
 
 
 /* Pink Light scheme (Default) */

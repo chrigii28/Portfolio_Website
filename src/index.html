@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -12,33 +12,68 @@
 
 
 <body>
-    <nav>
-        <ul>
-          <li><strong>Kristian Velkov</strong></li>
-        </ul>
-        <ul>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="./test.html">Personal</a></li>
-          <li><button id="BtnContact" v-on:click="reverseMessage">Contact</button></li>
-          
-        </ul>
-    </nav>
-    <div>
-        <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080" alt="Page Image" width="360"/>
+    <div id="app">
+        <div id="content">
+            <div class="row">
+
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1zDZJwIB4whY194Rj9OAVt_6dqmOp7pm8&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1bmo5nBykgPJOhap-7YWxjlUS5knljQuE&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1sMf_vgsmQAJGpu6ih2EXNWw_aN1IyKUY&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1Wqk8IPCkE2J8cYWPB9Ni2ENS3x7OyhgV&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1fDHBvj75wxSovyZBf7GGrPQzhVvfdYr1&sz=w1080"
+                    alt="Page Image">
+
+
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+
+
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+
+
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+                <img src="https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080"
+                    alt="Page Image">
+
+            </div>
+        </div>
     </div>
-    <div id="app">{{ message }}</div>
-
-<script type="module">
-  import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-
-  createApp({
-    setup() {
-      const message = ref('Hello Vue!')
-      return {
-        message
-      }
-    }
-  }).mount('#app')
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
