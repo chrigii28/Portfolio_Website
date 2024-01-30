@@ -1,45 +1,36 @@
-/* styles.css */
-
-.row {
+.flex-container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Adjust spacing to your preference */
-  gap: 2px; /* Space between images */
+  flex-wrap: wrap; /* This allows items to wrap to the next line */
+  gap: 10px; /* This sets the gap between items */
 }
 
-.row img {
-  flex: 1; /* Allow images to grow and fill the available space */
-  max-width: 100%; /* Ensure images don't overflow their container */
-  height: 100%; /* Maintain aspect ratio */
-  min-width: 100px; /* Minimum width of images to ensure they don't get too small */
-  transition: transform 0.5s ease; /* Smooth transition for scaling */
-  transform-origin: center; /* Scale from the center of the image */
-  transform: scale(0.8); /* Start images at a smaller scale */
-  object-fit: cover; /* Cover the area of the container without breaking the aspect ratio */
-
+.image{
+  display: inline-block; /* Make the div's width fit its content */
+  line-height: 0; /* Remove space below the image */
+  font-size: 0; /* Remove space between inline(-block) elements */
 }
 
 /* Media queries for responsiveness */
 @media (min-width: 480px) {
-  .row img {
+  .flex-container div {
     flex-basis: calc(100% / 2 - 10px); /* 2 images per row minus gap */
   }
 }
 
 @media (min-width: 768px) {
-  .row img {
+  .flex-container div {
     flex-basis: calc(100% / 3 - 10px); /* 3 images per row minus gap */
   }
 }
 
 @media (min-width: 992px) {
-  .row img {
+  .flex-container div {
     flex-basis: calc(100% / 4 - 10px); /* 4 images per row minus gap */
   }
 }
 
 @media (min-width: 1200px) {
-  .row img {
+  .flex-container div {
     flex-basis: calc(100% / 5 - 10px); /* 5 images per row minus gap */
   }
 }

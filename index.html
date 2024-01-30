@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<!--https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
+<body>
+    <div id="app">
+        <div class="flex-container">
+            <div v-for="src in imageSources" :key="src" class="image">
+                <img :src="src" :alt="`Image ${src}`" />
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script> 
+</body>
+
+</html>
