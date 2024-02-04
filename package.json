@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "unoverlay-vue": "^0.3.0",
+    "usemodal-vue3": "^0.3.7"
+  }
+}

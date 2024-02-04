@@ -1,43 +1,55 @@
-.flex-container{
+.row {
   display: flex;
-  flex-wrap: wrap; /* This allows items to wrap to the next line */
-  gap: 10px; /* This sets the gap between items */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.image{
-  display: inline-block; /* Make the div's width fit its content */
-  line-height: 0; /* Remove space below the image */
-  font-size: 0; /* Remove space between inline(-block) elements */
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
-/* Media queries for responsiveness */
-@media (min-width: 480px) {
-  .flex-container div {
-    flex-basis: calc(100% / 2 - 10px); /* 2 images per row minus gap */
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    display: inline-block;
   }
 }
 
-@media (min-width: 768px) {
-  .flex-container div {
-    flex-basis: calc(100% / 3 - 10px); /* 3 images per row minus gap */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    display: inline-block;
   }
 }
 
-@media (min-width: 992px) {
-  .flex-container div {
-    flex-basis: calc(100% / 4 - 10px); /* 4 images per row minus gap */
-  }
+#burger{
+  width: 4em;
+  position: fixed;
+  margin: 1em;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-
-@media (min-width: 1200px) {
-  .flex-container div {
-    flex-basis: calc(100% / 5 - 10px); /* 5 images per row minus gap */
-  }
-}
-
-
-
-
 
 /* Pink Light scheme (Default) */
 /* Can be forced with data-theme="light" */
