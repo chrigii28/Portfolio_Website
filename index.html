@@ -23,35 +23,11 @@
             </ul>
         </nav>
 
-        <div class="row">
-            <div class="column">
-                <div v-for="(src, index) in imagescol1" :key="index">
-                    <a :href="src">
-                        <img :src="src" alt="Image">
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div v-for="(src, index) in imagescol2" :key="index">
-                    <a :href="src">
-                        <img :src="src" alt="Image">
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div v-for="(src, index) in imagescol3" :key="index">
-                    <a :href="src">
-                        <img :src="src" alt="Image">
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div v-for="(src, index) in imagescol4" :key="index">
-                    <a :href="src">
-                        <img :src="src" alt="Image">
-                    </a>
-                </div>
-            </div>
+        <div>
+            <a href = "linktr.ee/kristianvelkov">
+                <h1>Continue to Linktree</h1>
+                <p>This website is under construction. Please use my Linktree.</p>
+            </a>
         </div>
     </div>
 
@@ -64,18 +40,7 @@
 
             data() {
                 return {
-                    images: ["https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1zDZJwIB4whY194Rj9OAVt_6dqmOp7pm8&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1bmo5nBykgPJOhap-7YWxjlUS5knljQuE&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1sMf_vgsmQAJGpu6ih2EXNWw_aN1IyKUY&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1Wqk8IPCkE2J8cYWPB9Ni2ENS3x7OyhgV&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1fDHBvj75wxSovyZBf7GGrPQzhVvfdYr1&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1fDHBvj75wxSovyZBf7GGrPQzhVvfdYr1&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1JNEuMBQkj2WerZUXLGNXTbO-y-pTJ-Gs&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1sMf_vgsmQAJGpu6ih2EXNWw_aN1IyKUY&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1zDZJwIB4whY194Rj9OAVt_6dqmOp7pm8&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1bmo5nBykgPJOhap-7YWxjlUS5knljQuE&sz=w1080",
-                        "https://drive.google.com/thumbnail?id=1Wqk8IPCkE2J8cYWPB9Ni2ENS3x7OyhgV&sz=w1080"],
+                    images: [],
                     imagescol1: [],
                     imagescol2: [],
                     imagescol3: [],
@@ -105,7 +70,7 @@
 
             },
             mounted() {
-                console.log("mounted executed");
+                console.log("You Found me! Get gnomed");
                 this.splitImages();
             }
         }).mount('#app');
